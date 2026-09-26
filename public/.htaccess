@@ -17,6 +17,7 @@ ErrorDocument 404 /404.html
 </IfModule>
 
 # Cache static assets (fingerprinted JS/CSS + media)
+AddType application/manifest+json .webmanifest
 <IfModule mod_expires.c>
   ExpiresActive On
   ExpiresByType image/jpeg "access plus 1 month"
@@ -25,6 +26,7 @@ ErrorDocument 404 /404.html
   ExpiresByType video/mp4 "access plus 1 month"
   ExpiresByType text/css "access plus 1 month"
   ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/manifest+json "access plus 1 week"
   ExpiresByType application/font-woff2 "access plus 1 year"
 </IfModule>
 

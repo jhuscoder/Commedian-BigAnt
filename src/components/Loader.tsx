@@ -36,17 +36,6 @@ export default function Loader() {
           transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
           className="fixed inset-0 z-[90] flex flex-col items-center justify-center bg-black"
         >
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 pointer-events-none"
-            style={{ background: 'radial-gradient(700px 700px at 50% 42%, rgba(201,169,110,0.12) 0%, transparent 60%)' }}
-          />
-          <div
-            aria-hidden="true"
-            className="absolute inset-0 pointer-events-none"
-            style={{ background: 'radial-gradient(135% 115% at 50% 45%, transparent 60%, rgba(0,0,0,0.45) 100%)' }}
-          />
-
           <div className="relative flex flex-col items-center">
             <div className="relative w-28 h-28 grid place-items-center">
               <motion.span

@@ -1,8 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import { SHOW_START } from '@/lib/config'
 
-export const SHOW_START = '2026-10-25T20:00:00'
+export { SHOW_START }
 
 export function useCountdown(targetIso: string = SHOW_START) {
   const target = new Date(targetIso).getTime()

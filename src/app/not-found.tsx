@@ -8,17 +8,6 @@ export default function NotFound() {
     <main className="min-h-screen bg-black flex flex-col items-center justify-center px-6 relative overflow-hidden">
       <div
         aria-hidden="true"
-        className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(700px 500px at 50% 35%, rgba(201,169,110,0.10) 0%, transparent 60%)' }}
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(135% 115% at 50% 50%, transparent 55%, rgba(0,0,0,0.45) 100%)' }}
-      />
-
-      <div
-        aria-hidden="true"
         className="absolute inset-0 flex items-center justify-center pointer-events-none select-none"
       >
         <span
@@ -30,14 +19,6 @@ export default function NotFound() {
       </div>
 
       <div className="relative text-center max-w-lg">
-        <div className="flex items-center justify-center gap-3 mb-8">
-          <span className="w-12 h-px bg-gradient-to-r from-transparent to-gold/50" />
-          <svg className="w-2.5 h-2.5 text-gold/60" viewBox="0 0 12 12" fill="currentColor">
-            <path d="M6 0L7.5 4.5L12 6L7.5 7.5L6 12L4.5 7.5L0 6L4.5 4.5Z" />
-          </svg>
-          <span className="w-12 h-px bg-gradient-to-l from-transparent to-gold/50" />
-        </div>
-
         <h1 className="font-heading text-4xl sm:text-5xl font-bold text-ivory mb-4">
           This joke didn&rsquo;t <span className="italic text-gold">land.</span>
         </h1>
