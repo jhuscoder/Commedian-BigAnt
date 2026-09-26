@@ -1,0 +1,36 @@
+{
+  "name": "commedian-bigant",
+  "version": "1.0.0",
+  "description": "A personal brand for Big Ant, showcasing his comedy, upcoming events, performances, media, and latest updates.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chris45-tech/Commedian-BigAnt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Chris45-tech/Commedian-BigAnt/issues"
+  },
+  "homepage": "https://github.com/Chris45-tech/Commedian-BigAnt#readme",
+  "dependencies": {
+    "framer-motion": "^13.1.0",
+    "next": "^16.3.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "26.2.0",
+    "@types/react": "19.2.18",
+    "typescript": "7.0.2"
+  }
+}

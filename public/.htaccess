@@ -1,0 +1,34 @@
+# ---------------------------------------------------------------
+# Big Ant — static site (Next.js export) deployment config
+# Copy the contents of the out/ folder into public_html/
+# ---------------------------------------------------------------
+
+# Route 404s to the custom comedy 404 page
+ErrorDocument 404 /404.html
+
+# Force HTTPS + www handling (comment until your SSL certificate
+# is installed in cPanel, otherwise this will break the site)
+# RewriteEngine On
+# RewriteCond %{HTTPS} !=on
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+</IfModule>
+
+# Cache static assets (fingerprinted JS/CSS + media)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 week"
+  ExpiresByType video/mp4 "access plus 1 month"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
