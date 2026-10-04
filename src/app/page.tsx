@@ -5,6 +5,7 @@ import PunchlineReveal from '@/components/PunchlineReveal'
 import Events from '@/components/Events'
 import JokeTicker from '@/components/JokeTicker'
 import Media from '@/components/Media'
+import Proposal from '@/components/Proposal'
 import CurtainCall from '@/components/CurtainCall'
 import Footer from '@/components/Footer'
 import BackToTop from '@/components/BackToTop'
@@ -19,6 +20,7 @@ export default function Home() {
       <Media />
       <Events />
       <JokeTicker />
+      <Proposal />
       {/* <CurtainCall /> */}
       <Footer />
       <BackToTop />

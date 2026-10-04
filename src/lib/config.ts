@@ -1,6 +1,8 @@
 export const TICKET_URL =
   'https://fewticket.com/discover/Bigant-live-in-concert-with-friends-you-must-be-joking'
 
+export const PROPOSAL_URL = '/proposal.pdf'
+
 export const SITE_URL = 'https://comedianbigant.com'
 
 export const SHOW = {
